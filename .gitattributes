@@ -30,3 +30,43 @@ public class PracticaClase02 {
         pagoHora = Byte.parseByte(JOptionPane.showInputDialog(""
                + "Pago por hora: "));
         salarioBruto= horasSemana * pagoHora;
+
+
+    nombre = JOptionPane.showInputDialog("Digite su nombre");
+    años = Byte.parseByte(JOptionPane.showInputDialog
+           ("Digite cuantos años lleva trabajando"));
+    horas_sem = Byte.parseByte(JOptionPane.showInputDialog
+           ("Cuantas horas semanales trabaja"));
+    semanas = Byte.parseByte(JOptionPane.showInputDialog("Digite cuantas s"
+              +"emanas trabajo esta semana"));
+    sal_hor = Byte.parseByte(JOptionPane.showInputDialog
+           ("Cuanto gana por hora en dolares"));
+    
+    if (años >= 10);
+        JOptionPane.showMessageDialog(null,"Aplica para el bono");
+        sal_bru = horas_sem*semanas*sal_hor;
+        bono = (short)(sal_bru * 0.020);
+        sal_bono = (short) (sal_bru + sal_bono);
+            if (sal_bono > 1000) {
+                deducciones = (short) (sal_bono * 0.010);
+               sal_neto = (short) (sal_bono - deducciones);
+                JOptionPane.showInputDialog(null,"Mi nombres es :" +nombre+
+                        "El salario mensual bruto es de:"
+                        +sal_neto);
+            }if (sal_bono > 2000) {
+                deducciones = (short) (sal_bono * 0.015);
+                sal_neto = (short) (sal_bono - deducciones);
+                JOptionPane.showInputDialog(null,"Mi nombres es :" +nombre+
+                        "El salario mensual bruto es de:"
+                        +sal_neto);
+            }else {
+                sal_neto = (short) (sal_bono - deducciones);
+                JOptionPane.showInputDialog(null,"Mi nombres es :" +nombre+
+                        "El salario mensual bruto es de:"
+                        +sal_neto);
+     }
+        
+        
+    }
+    
+}
