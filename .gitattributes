@@ -1,2 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+    semanas = Byte.parseByte(JOptionPane.showInputDialog("Digite cuantas s"
+              +"emanas trabajo esta semana"));
+    sal_hor = Byte.parseByte(JOptionPane.showInputDialog
+           ("Cuanto gana por hora en dolares"));
