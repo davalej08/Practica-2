@@ -22,3 +22,8 @@ public class PracticaClase02 {
         byte pagoHora= 0;
         int salarioBruto= 0;
         int salarioBono = 0;
+        
+        antiguedad = Byte.parseByte(JOptionPane.showInputDialog(""
+                + "Ingrese años de antiguedad: "));
+        horasSemana = Byte.parseByte(JOptionPane.showInputDialog(""
+                + "Ingrese horas laboradas por semana: "));
